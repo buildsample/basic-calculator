@@ -3,7 +3,8 @@ language: php
 php: 
   - 5.4
   
-script: phpunit calculator_test.php
+script: 
+  - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage test.php
 
 
 
